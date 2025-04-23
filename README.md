@@ -194,3 +194,13 @@ nc -zv localhost 2002
 ---
 
 Need advanced features like inserting images, creating charts, or macro automation? Let me know!
+
+---
+
+Running container within ubuntu wsl for rhel 7
+```
+    1  sudo apt update
+    2  sudo apt install podman
+    3  podman login registry.redhat.io
+    4  podman run -it registry.redhat.io/rhel7/rhel bash
+```
